@@ -1,2 +1,3 @@
-# tads-unix-auto-sync
-Script Shell de sincronização de arquivos, trabalho para a matéria de Administração de Sistemas - TADS - UFPR.
+# UNIX AUTO SYNC
+Script Shell de sincronização de arquivos periodicamente.
+Trabalho para a matéria de Administração de Sistemas - TADS - UFPR.
