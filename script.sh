@@ -7,20 +7,28 @@ Backup() {
   echo "Olá $name! Que bom ter você de volta por aqui!"
   echo "Escolha a frequência com a qual quer que o backup seja realizado:"
   echo
-  echo "1. A cada hora"
-  echo "2. A cada dia"
-  echo "3. A cada semana"
-  echo "4. A cada mês"
+  echo "1. A cada minuto"
+  echo "2. A cada hora"
+  echo "3. A cada dia"
+  echo "4. A cada semana"
+  echo "5. A cada mês"
 
   read option
 
   case $option in
-    1) Hourly ;;
-    2) Daily ;;
-    3) Weekly ;;
-    3) Monthly ;;
+    1) Minute ;;
+    2) Hourly ;;
+    3) Daily ;;
+    4) Weekly ;;
+    5) Monthly ;;
     *) echo "Ops! Parece que você selecionou um intervalo inválido, tente novamente." ; echo ; Backup ;;
   esac
+}
+
+Minute() {
+  clear
+  (crontab -l 2>/dev/null; echo "* * * * * /Users/gustatarem/Documents/UFPR/admsis/tads-unix-auto-sync/backup.sh") | crontab -
+  echo "Seu backup será realizado todo minuto a partir de agora!"
 }
 
 Hourly() {
