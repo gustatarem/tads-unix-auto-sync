@@ -32,7 +32,7 @@ Change() {
   defaultDestination=$newDestinationPath/BACKUP_$date
 
   clear
-  rsync -avh --progress "$newPath" "$defaultDestination";
+  rsync -auvh --progress "$newPath" "$defaultDestination";
   echo "O backup da pasta $newPath foi armazenado na pasta $defaultDestination."
   echo "Execute o arquivo script.sh caso queira definir uma automação para o processo!"
 }
@@ -43,7 +43,7 @@ Default() {
   destinationPath=$HOME/Desktop/backup/BACKUP_$date
 
   clear
-  rsync -avh --progress "$dataPath" "$destinationPath";
+  rsync -auvh --progress "$dataPath" "$destinationPath";
   echo "O backup da pasta $dataPath foi armazenado na pasta $destinationPath."
   echo "Execute o arquivo script.sh caso queira definir uma automação para o processo!"
 }
