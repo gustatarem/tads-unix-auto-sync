@@ -3,6 +3,7 @@
 date=$(date '+%Y:%m:%d_%H-%M-%S');
 
 Question() {
+  echo "---------- SEJA BEM VINDO AO SISTEMA DE BACKUP AUTOMÁTICO  ----------"
   echo "Deseja selecionar uma pasta diferente para backup?"
   echo
   echo "1. sim"

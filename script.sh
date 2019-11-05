@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Backup() {
-  echo "---------- SEJA BEM VINDO AO SISTEMA DE BACKUP AUTOMÁTICO  ----------"
+  echo "---------- SEJA BEM VINDO AO SISTEMA DE AGENDAMENTO DE BACKUP AUTOMÁTICO  ----------"
   echo "Quem é você?!"
   read name
   echo "Olá $name! Que bom ter você de volta por aqui!"
