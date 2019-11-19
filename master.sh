@@ -1,8 +1,7 @@
 #!/bin/bash
 
-date=$(date '+%Y:%m:%d_%H-%M-%S');
 dataPath="$HOME/Desktop/original"
-destinationPath="$HOME/Desktop/backup/BACKUP_$date"
+destinationPath="$HOME/Desktop/backup"
 
 Hello() {
   echo "---------- SEJA BEM VINDO AO SISTEMA DE AGENDAMENTO DE BACKUP AUTOMÁTICO  ----------"
@@ -43,7 +42,7 @@ Change() {
   read newDestinationPath
   
   dataPath="$newPath"
-  destinationPath="$newDestinationPath/BACKUP_$date"
+  destinationPath="$newDestinationPath"
 
   clear
   
